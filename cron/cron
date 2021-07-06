@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Edit the name of the scrip that should run in a screen
+# Edit the Healthcheck.io UUID to ensure proper monitoring
+
+SCRIPT_PATH=/usr/local/bin
+SCRIPT_NAME=exemple.sh
+
+screen -dm -S $SCRIPT_NAME /bin/bash $SCRIPT_PATH/$SCRIPT_NAME
